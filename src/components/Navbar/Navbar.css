@@ -1,0 +1,78 @@
+.Navbar {
+  display: flex;
+  width: 100vw;
+  height: 4rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background-color: #f05a22;
+}
+
+.logo {
+  display: flex;
+  /* width: 100%; */
+  font-size: 1rem;
+  color: #fff;
+}
+
+.nav {
+  display: flex;
+  bottom: none;
+  border-radius: 1.5rem;
+  background-color: #fff;
+  margin-right: 1rem;
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  width: 15rem;
+  justify-content: space-between;
+  padding: 0.7rem 1.5rem;
+}
+
+.nav-list li {
+  cursor: pointer;
+}
+
+ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.icon {
+  color: #f9ddcf;
+  margin-bottom: 3px;
+}
+
+.active > .icon {
+  color: #f05a22;
+}
+.active > .dot {
+  border: 3px solid #f05a22;
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 450px) {
+  .Navbar {
+    display: flex;
+    gap: 1rem;
+  }
+
+  .logo {
+    font-size: 0.8rem;
+  }
+  .nav-list {
+    width: 10rem;
+    padding: 0.5rem 1rem;
+  }
+}
+
+@media screen and (min-width: 860px) {
+  .nav {
+    position: absolute;
+    left: 40%;
+  }
+}

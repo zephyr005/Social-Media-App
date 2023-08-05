@@ -1,0 +1,38 @@
+.Search {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.Search h1 {
+  font-size: 1.8rem;
+}
+.search-bar {
+  display: flex;
+  border: none;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  padding: 0.6rem;
+  background-color: #fff;
+}
+
+.search-bar img {
+  object-fit: contain;
+}
+
+.input {
+  width: 100%;
+  border: none;
+  font-size: 1rem;
+  padding-block: 0.2rem;
+}
+
+.input:focus {
+  outline: none;
+}
+
+@media screen and (max-width: 450px) {
+  .Search h1 {
+    font-size: 1.2rem;
+  }
+}
